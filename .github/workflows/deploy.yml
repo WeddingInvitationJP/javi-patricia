@@ -26,8 +26,10 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "Javi"
-          git config --global user.email "javiaparici0205@gmail.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         run: npm run deploy
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
