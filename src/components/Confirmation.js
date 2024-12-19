@@ -3,7 +3,6 @@ import {
   Box,
   Typography,
   Button,
-  Checkbox,
   FormControlLabel,
   Modal,
   IconButton,
@@ -17,7 +16,6 @@ import PersonIcon from "@mui/icons-material/Person";
 import CloseIcon from "@mui/icons-material/Close";
 import LocalActivityIcon from "@mui/icons-material/LocalActivity";
 import VerifiedIcon from "@mui/icons-material/Verified";
-import busGif from "../assets/bus.gif"; // Asegúrate de que la ruta es correcta
 import { launchConfetti } from "./utils/confeti";
 import { CardComponent } from "./cards/CardComponent";
 import { CardIcon } from "./cards/CardIcon";
