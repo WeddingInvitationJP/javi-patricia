@@ -5,7 +5,6 @@ import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import PauseIcon from "@mui/icons-material/Pause";
 import Countdown from "./Countdown";
 import Ceremony from "./Ceremony";
-import Party from "./Party";
 import Confirmation from "./Confirmation";
 import Detail from "./Detail";
 import backgroundImage from "../assets/javi-patricia.jpeg"; // Asegúrate de que la ruta sea correcta

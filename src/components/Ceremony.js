@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { styled } from '@mui/system';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AddAlarmIcon from '@mui/icons-material/AddAlarm';
 import DirectionsIcon from '@mui/icons-material/Directions';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
@@ -9,7 +8,6 @@ import { CardComponent } from './cards/CardComponent';
 import { CardIcon } from './cards/CardIcon';
 import ChurchIcon from '@mui/icons-material/Church';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
-import CelebrationIcon from '@mui/icons-material/Celebration';
 
 const CeremonyIcon = styled(EventAvailableIcon)({
   fontSize: '2rem',
