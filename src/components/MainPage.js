@@ -139,7 +139,7 @@ const MainPage = () => {
           variant="subtitle1"
           sx={{ fontStyle: "italic", position: "relative", zIndex: 1 }}
         >
-          Todos somos mortales, hasta el primer beso y la segunda copa de vino.
+          Conocer el amor de los que amamos es el fuego que alimenta la vida.
         </Typography>
         <img src={quotes} alt="quotes2" width={"40px"} style={{ rotate: "180deg" }} />
       </Box>

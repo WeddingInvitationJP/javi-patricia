@@ -107,18 +107,25 @@ const Detail = () => {
           <CardIcon>
             <GiftIcon />
           </CardIcon>
-          <Typography
+          {/**<Typography
             variant="h6"
-            sx={{ fontWeight: "bold", color: "#97AAB1", marginBottom: "20px" }}
+            sx={{ fontWeight: "bold", color: "#97AAB1", marginBottom: "20px", marginTop: "20px" }}
           >
             Nuestro mayor regalo es vuestra presencia
-          </Typography>
+          </Typography>*/}
           <Typography
             variant="body1"
-            sx={{ marginBottom: "20px", color: "#855D41" }}
+            sx={{ 
+              marginTop: "20px", 
+              marginBottom: "20px", 
+              color: "#855D41",
+              fontSize: "0.95rem",  // Reducimos ligeramente el tamaño de la fuente
+              lineHeight: "1.4",    // Ajustamos el espaciado entre líneas
+              maxWidth: "280px",    // Controlamos el ancho máximo
+              margin: "20px auto",  // Centramos el texto
+            }}
           >
-            Y, si en el caso, quieres tener un detalle con nosotros, puedes
-            aportar aquí:
+            Nuestro mayor regalo es vuestra presencia, pero si nos queréis hacer un detalle, es bienvenido
           </Typography>
           <Box
             sx={{

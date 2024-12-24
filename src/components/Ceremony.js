@@ -29,6 +29,12 @@ const buttonStyle = {
   }
 };
 
+const AddressText = styled(Typography)({
+  fontSize: '0.8rem',  // Texto más pequeño
+  color: '#796465',    // Color que usamos en otros textos secundarios
+  fontStyle: 'italic', // Estilo itálico para diferenciarlo
+});
+
 const Ceremony = () => {
   const handleAddToCalendar = () => {
     const event = {
@@ -68,8 +74,8 @@ const Ceremony = () => {
         <Section marginTop={5}>
           <ChurchIcon sx={{ color: '#9B6B7D', fontSize: '2rem', marginBottom: '10px' }} />
           <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#97AAB1' }}>CEREMONIA</Typography>
-          <Typography variant="body1">Iglesia de Almazora</Typography>
-          <Typography variant="body1">Plaça de l'Església, 2A, Almazora</Typography>
+          <Typography variant="body1">Iglesia de la Natividad de Nuestra Señora</Typography>
+          <AddressText>Plaça de l'Església, 2, Almazora</AddressText>
           <Button
             variant="contained"
             sx={buttonStyle}
@@ -86,7 +92,7 @@ const Ceremony = () => {
           <RestaurantIcon sx={{ color: '#9B6B7D', fontSize: '2rem', marginBottom: '10px' }} />
           <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#97AAB1' }}>CONVITE</Typography>
           <Typography variant="body1">Masía Fuente la Reina</Typography>
-          <Typography variant="body1">Partida Coscollosa, Castellón</Typography>
+          <AddressText>Partida Coscollosa, Castellón</AddressText>
           <Button
             variant="contained"
             sx={buttonStyle}

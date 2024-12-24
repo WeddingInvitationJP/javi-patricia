@@ -88,6 +88,7 @@ const Confirmation = () => {
   const [pickupLocation, setPickupLocation] = useState('');
   const [hasIntolerances, setHasIntolerances] = useState('false');
   const [intolerances, setIntolerances] = useState('');
+  const [personCount, setPersonCount] = useState(1);
   const [open, setOpen] = useState(false);
   const contentRef = useRef(null);
 
@@ -103,8 +104,15 @@ const Confirmation = () => {
   const phoneNumberJavi = process.env.REACT_APP_PHONE_JAVI;
   const phoneNumberPatricia = process.env.REACT_APP_PHONE_PATRICIA;
 
+  const handlePersonCount = (increment) => {
+    setPersonCount(prev => Math.max(1, prev + increment));
+  };
+
   const handleSendMessage = (recipient) => {
     let message = "¡Ese día estaré con vosotros, confirmo mi asistencia! ❤\n\n";
+    
+    // Información sobre asistentes
+    message += `Asistentes: ${personCount} personas\n\n`;
     
     // Información sobre transporte
     message += "Transporte: " + (needsTransport ? "SÍ" : "NO");
@@ -264,6 +272,31 @@ const Confirmation = () => {
                   }}
                 />
               )}
+            </Box>
+
+            <Box sx={{ marginBottom: "20px" }}>
+              <Typography variant="body1" sx={{ marginBottom: "10px", color: "#796465" }}>
+                ¿Cuántas personas vendréis?
+              </Typography>
+              <Box sx={{ display: 'flex', justifyContent: 'center', gap: 4 }}>
+                <Box>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                    <Button 
+                      onClick={() => handlePersonCount(-1)}
+                      sx={{ minWidth: '40px', color: '#9B6B7D' }}
+                    >
+                      -
+                    </Button>
+                    <Typography sx={{ color: "#796465" }}>{personCount}</Typography>
+                    <Button 
+                      onClick={() => handlePersonCount(1)}
+                      sx={{ minWidth: '40px', color: '#9B6B7D' }}
+                    >
+                      +
+                    </Button>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
 
             <Typography variant="h6" sx={{ marginBottom: "20px", color: "#97AAB1" }}>
