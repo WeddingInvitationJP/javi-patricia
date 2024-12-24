@@ -109,7 +109,7 @@ const Confirmation = () => {
   };
 
   const handleSendMessage = (recipient) => {
-    let message = "¡Ese día estaré con vosotros, confirmo mi asistencia! ❤\n\n";
+    let message = "¡Ese día estaré con vosotros, confirmo mi asistencia! \n\n";
     
     // Información sobre asistentes
     message += `Asistentes: ${personCount} personas\n\n`;
