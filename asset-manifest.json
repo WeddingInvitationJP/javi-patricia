@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/javi-patricia/static/css/main.dbeadff9.css",
-    "main.js": "/javi-patricia/static/js/main.46bfe6e8.js",
+    "main.js": "/javi-patricia/static/js/main.70858a36.js",
     "static/js/453.a1bbb3f1.chunk.js": "/javi-patricia/static/js/453.a1bbb3f1.chunk.js",
     "static/media/musica-fondo.mp3": "/javi-patricia/static/media/musica-fondo.5c20e62614098a77f9c5.mp3",
     "static/media/javi-patricia.jpeg": "/javi-patricia/static/media/javi-patricia.8a7174585437617d5f77.jpeg",
     "static/media/quotes.png": "/javi-patricia/static/media/quotes.058d8ff06cef46157d43.png",
     "index.html": "/javi-patricia/index.html",
     "main.dbeadff9.css.map": "/javi-patricia/static/css/main.dbeadff9.css.map",
-    "main.46bfe6e8.js.map": "/javi-patricia/static/js/main.46bfe6e8.js.map",
+    "main.70858a36.js.map": "/javi-patricia/static/js/main.70858a36.js.map",
     "453.a1bbb3f1.chunk.js.map": "/javi-patricia/static/js/453.a1bbb3f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dbeadff9.css",
-    "static/js/main.46bfe6e8.js"
+    "static/js/main.70858a36.js"
   ]
 }
